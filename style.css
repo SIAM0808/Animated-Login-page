@@ -24,6 +24,7 @@ section{
     gap: 2px;
 }
 section::before{
+    
     content: '';
     background: linear-gradient(#000, #0f0, #000);
     width: 100%;
