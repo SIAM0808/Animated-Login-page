@@ -50,13 +50,21 @@ section #box{
     z-index: 1;
     transition: 1.7s;
 }
-@media (max-width: 900px){
+@media (max-width: 1000px){
     section #box{
         width: calc(10vw - 2px);
         height: calc(10vw - 2px);
     }
 }
+@media (min-width: 1000px){
+    section #box{
+        width: calc(9vw - 2px);
+        height: calc(9vw - 2px);
+    }
+}
+
 @media (max-width: 600px){
+    
     section #box{
         width: calc(20vw - 2px);
         height: calc(20vw - 2px);
@@ -67,9 +75,11 @@ section #box:hover{
     transition: 0s;
 }
 .container {
+    
     position: absolute;
-    height: 300px;
-    width: 400px;
+    height: 65%;
+    aspect-ratio: 1/1;
+    
     padding: 40px 50px;
     text-align: center;
     color: #fff;
