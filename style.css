@@ -51,13 +51,13 @@ section #box{
     transition: 1.7s;
 }
 @media (max-width: 900px){
-    section span{
+    section #box{
         width: calc(10vw - 2px);
         height: calc(10vw - 2px);
     }
 }
 @media (max-width: 600px){
-    section span{
+    section #box{
         width: calc(20vw - 2px);
         height: calc(20vw - 2px);
     }
