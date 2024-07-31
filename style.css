@@ -3,25 +3,24 @@
     margin: 0;
     font-family: 'Poppins';
 }
-html,body{
-    width: 100%;
-}
 body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 }
 section{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     gap: 2px;
+    overflow: hidden;
 }
 section::before{
     
@@ -30,7 +29,7 @@ section::before{
     width: 100%;
     height: 100%;
     position: absolute;
-    animation: flow 7s linear infinite;
+    animation: flow 5s linear infinite;
 }
 @keyframes flow {
     0%{
@@ -50,6 +49,18 @@ section #box{
     position: relative;
     z-index: 1;
     transition: 1.7s;
+}
+@media (max-width: 900px){
+    section span{
+        width: calc(10vw - 2px);
+        height: calc(10vw - 2px);
+    }
+}
+@media (max-width: 600px){
+    section span{
+        width: calc(20vw - 2px);
+        height: calc(20vw - 2px);
+    }
 }
 section #box:hover{
     background-color: #0f0;
@@ -139,6 +150,8 @@ input:valid+label {
     background-color: #0f0;
     width: 100%;
     transform: translate(-200px);
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .content button:hover {}
